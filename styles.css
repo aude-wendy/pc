@@ -1,0 +1,166 @@
+/* Couleurs principales */
+:root {
+    --rose-clair: #ffcccb;
+    --blanc: #ffffff;
+    --noir: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--blanc);
+    color: var(--noir);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--rose-clair);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo-image {
+    width: 180px; /* Taille ajustable du logo */
+    height: auto;
+    margin-top: 1%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--noir);
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#accueil {
+    background-color: var(--rose-clair);
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: var(--noir);
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--blanc);
+    background-color: var(--noir);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--rose-clair);
+}
+
+#description .phone-image img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#benefits .benefits-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0em;
+}
+
+.benefit-item {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.benefit-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#temoignages .testimonial {
+    margin-top: 20px;
+}
+
+#temoignages .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#contact .contact-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#contact .contact-btn:hover {
+    background-color: var(--rose-clair);
+}
+
+footer {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #avantages .advantages {
+        flex-direction: column;
+    }
+
+    #description .phone-image img {
+        width: 200px;
+    }
+
+    #avantages .advantages img {
+        width: 100px;
+    }
+}
